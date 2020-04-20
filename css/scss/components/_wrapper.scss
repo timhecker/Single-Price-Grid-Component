@@ -1,0 +1,17 @@
+@import '../variables';
+@import '../functions';
+
+.wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: $space-big;
+
+  @media screen and (break(medium)) {
+    padding: $space-huge;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

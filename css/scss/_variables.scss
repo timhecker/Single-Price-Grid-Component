@@ -1,0 +1,29 @@
+// transition stuff
+$transition-timing: 0.3s;
+$transition-easing: cubic-bezier(0.48, -0.47, 0.49, 1.46);
+
+// radius
+$radius: 0.625rem;
+
+// spaces
+$base-spacing: 0.5rem;
+$space-mini: $base-spacing / 2;
+$space-small: $base-spacing;
+$space-medium: $base-spacing * 2;
+$space-big: $base-spacing * 3;
+$space-huge: $base-spacing * 4;
+$space-super: $base-spacing * 5;
+$space-monster: $base-spacing * 8;
+
+// breakpoints bootstrap-friendly
+$breakpoints: (
+  small: 36em,
+  medium: 48em,
+  large: 62em,
+  extraLarge: 75em,
+  customExtraLarge: 100em,
+);
+
+// layouts
+$mobile-width: 375px;
+$desktop-width: 1440px;

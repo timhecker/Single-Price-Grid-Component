@@ -1,0 +1,12 @@
+@import './palette';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100%/1.4 'Karla', sans-serif;
+  background-color: $color-body;
+}
