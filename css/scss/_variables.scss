@@ -1,9 +1,4 @@
-// transition stuff
-$transition-timing: 0.3s;
-$transition-easing: cubic-bezier(0.48, -0.47, 0.49, 1.46);
-
-// radius
-$radius: 0.625rem;
+@import './palette';
 
 // spaces
 $base-spacing: 0.5rem;
@@ -14,6 +9,19 @@ $space-big: $base-spacing * 3;
 $space-huge: $base-spacing * 4;
 $space-super: $base-spacing * 5;
 $space-monster: $base-spacing * 8;
+
+// transition stuff
+$transition-timing: 0.3s;
+$transition-easing: cubic-bezier(0.48, -0.47, 0.49, 1.46);
+
+// radius
+$radius: $space-mini;
+
+/* shadow */
+$depth-0: none;
+$depth-1: rgba($color-shadow, 0.15) 0 1px 6px, rgba($color-shadow, 0.11) 0 1px 4px;
+$depth-2: rgba($color-shadow, 0.19) 0 3px 10px, rgba($color-shadow, 0.23) 0 3px 10px;
+$depth-3: rgba($color-shadow, 0.23) 0 10px 30px, rgba($color-shadow, 0.23) 0 6px 10px;
 
 // breakpoints bootstrap-friendly
 $breakpoints: (
