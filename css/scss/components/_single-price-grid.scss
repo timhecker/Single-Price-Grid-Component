@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../palette';
+
+.single-price-grid {
+  box-shadow: $depth-2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($mobile-width, 1fr));
+  // grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 800px;
+}
+
+.single-price-grid__item {
+  padding: $space-big;
+
+  @media screen and (break(large)) {
+    padding: $space-super;
+  }
+}
+
+.single-price-grid__item--main {
+  grid-column: 1 / -1;
+  background-color: #fff;
+
+  // redefine h2
+  h2 {
+    color: $color-cta;
+  }
+}
+
+.single-price-grid__item--secondary {
+  background-color: $color-primary;
+  color: #fff;
+
+  & + & {
+    background-color: lighten($color-primary, 3%);
+  }
+
+  // redefine ul
+  ul {
+    list-style: none;
+  }
+
+  // redefine button
+  button,
+  .button {
+    margin-top: $space-big;
+  }
+}
+
+.single-price-grid__price {
+  display: inline-flex;
+  align-items: center;
+
+  strong {
+    font-size: 3rem;
+    line-height: 1;
+    margin-right: $space-medium;
+  }
+}
