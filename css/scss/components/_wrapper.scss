@@ -4,7 +4,7 @@
 .wrapper {
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: $space-big;
+  padding: $space-super $space-big;
 
   @media screen and (break(medium)) {
     padding: $space-huge;
