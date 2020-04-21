@@ -3,9 +3,10 @@
 
 .single-price-grid {
   box-shadow: $depth-2;
+  border-radius: $radius;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($mobile-width, 1fr));
-  // grid-template-columns: repeat(2, 1fr);
   width: 100%;
   max-width: 800px;
 }
@@ -21,6 +22,7 @@
 .single-price-grid__item--main {
   grid-column: 1 / -1;
   background-color: #fff;
+  border-radius: $radius $radius 0 0;
 
   // redefine h2
   h2 {
