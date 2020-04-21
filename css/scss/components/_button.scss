@@ -43,7 +43,8 @@ button,
     pointer-events: none;
     opacity: 0;
     background-color: $color-shadow;
-    transition: opacity $transition-timing $transition-easing;
+    transition: $transition-timing $transition-easing;
+    transition-property: opacity, background-color;
   }
 
   &:not([href]) {
@@ -61,7 +62,7 @@ button,
     transform: scale(0.98);
     box-shadow: $depth-0;
     &::before {
-      opacity: 0.2;
+      background-color: #fff;
     }
   }
 
